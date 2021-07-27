@@ -3,6 +3,7 @@
 	<name>CBancoApp</name>
 	<comment></comment>
 	<projects>
+		<project>CBancoModel</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

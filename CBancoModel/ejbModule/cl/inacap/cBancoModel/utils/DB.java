@@ -12,14 +12,13 @@ public class DB {
 	public boolean conectar() {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			this.con = DriverManager.getConnection("jdbc:mysql://localhost/prueba4?serverTimezone=UTC", "root", "");
+			this.con = DriverManager.getConnection("jdbc:mysql://localhost/pruebafinal?serverTimezone=UTC", "root", "");
 			
 			return true;
 		} catch (Exception ex) {
 			return false;
 		}
 	}
-	
 	public void desconectar() {
 		try {
 			con.close();

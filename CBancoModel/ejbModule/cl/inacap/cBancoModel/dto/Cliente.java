@@ -1,9 +1,11 @@
 package cl.inacap.cBancoModel.dto;
 
+
 public class Cliente {
 
 	private String rut;
-	private String clave;
+	private String claveRut;
+	private int clave;
 	private int idCuenta;
 	private int saldo;
 	private int monto;
@@ -14,6 +16,12 @@ public class Cliente {
 	private int credito;
 	private int creditoU;
 	
+	public String getClaveRut() {
+		return claveRut;
+	}
+	public void setClaveRut(String claveRut) {
+		this.claveRut = claveRut;
+	}
 	public int getCredito() {
 		return credito;
 	}
@@ -32,10 +40,11 @@ public class Cliente {
 	public void setRut(String rut) {
 		this.rut = rut;
 	}
-	public String getClave() {
+	
+	public int getClave() {
 		return clave;
 	}
-	public void setClave(String clave) {
+	public void setClave(int clave) {
 		this.clave = clave;
 	}
 	public int getIdCuenta() {
